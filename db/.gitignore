@@ -2,4 +2,4 @@
 postgres
 *.ipynb
 *.cache
-__pycache__
+*pycache*
