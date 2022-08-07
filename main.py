@@ -1,4 +1,3 @@
-from attr import attr
 import bonobo
 from bonobo.config import use
 import requests
@@ -6,18 +5,13 @@ from bs4 import BeautifulSoup
 import http
 import re
 from datetime import datetime
-import pandas as pd
-from datetime import date
-from db import artist
 from db.base import Base, Session, engine
 from db.event import Event
 from db.program import Program
 from db.artist import Artist
-from sqlalchemy_utils.functions import database_exists, create_database
 
 
 EVENTS_URL = 'https://www.lucernefestival.ch/en/program/summer-festival-22'
-ENGINE_URI = 'postgresql://rhgpjgzgkgrqbm:ce316877e4f4ceda3b1db2dcf4c3b16a75969dc2e0405b56c3b36c9783aacacb@ec2-54-208-104-27.compute-1.amazonaws.com:5432/de2hefu3r7r8qv'
 
 Base.metadata.create_all(engine)
 
