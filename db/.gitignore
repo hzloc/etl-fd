@@ -1,3 +1,5 @@
 *.cache
 postgres
 *.ipynb
+*.cache
+__pycache__
